@@ -4,6 +4,7 @@ h1 {
   color: #333;
 }
 
+/* Image Accordion */
 .accordion {
   width: 100%;
   max-width: 1080px;
@@ -57,4 +58,87 @@ h1 {
   margin: 0;
   width: 100%;
   text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: "Montserrat", sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+/* Individual Images */
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1){
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/04/22/54/panda-1236875__340.jpg");
+}
+
+.accordion ul li:nth-child(2){
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/21/16/03/panda-4421395__340.jpg");
+}
+
+.accordion ul li:nth-child(3){
+  background-image: url("https://cdn.pixabay.com/photo/2015/02/26/06/09/panda-649938__340.jpg");
+}
+
+.accordion ul li:nth-child(4){
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/02/00/17/panda-655491__340.jpg");
+}
+
+.accordion ul li:nth-child(5){
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/03/06/58/black-and-white-1711000__340.jpg");
+}
+
+.accordion ul li:nth-child(6){
+  background-image: url("https://cdn.pixabay.com/photo/2013/11/06/09/17/panda-206297__340.jpg");
+}
+
+/* Styles for images when hover over them */
+.accordion ul:hover li {
+  width: 8%;
+}
+
+.accordion ul:hover li:hover {
+  width: 60%;
+}
+
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px){
+  body {
+    margin: 0;
+  }
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
