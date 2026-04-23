@@ -1,11 +1,14 @@
 # Image Accordion Effect
-CodePlayer Image Accordion Effect project. Made with HTML and CSS.
+A row of images that have an accordion effect when a user hovers over an image.
+
+## Tech Stack
+- HTML
+- CSS
 
 ## Instructions
-Clone repo or download zip file. Open index.html in your browser.
-
-## Contributions
-This code is based on starter code from TheCodePlayer.com. Therefore I will not be accepting any pull requests.
+1. Clone repo or download zip file. 
+2. Open index.html in your browser.
+3. A row of images will be in the center of the screen with a headline directing users to hover over each image. When you hover over each image, the other images will minimize. The image you are hovering over will show placeholders for a headline and text.
 
 ## Acknowledgements
 * TheCodePlayer.com
