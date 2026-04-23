@@ -12,3 +12,4 @@ A row of images that have an accordion effect when a user hovers over an image.
 
 ## Acknowledgements
 * TheCodePlayer.com
+* Google Fonts
